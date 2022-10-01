@@ -1,0 +1,7 @@
+body {
+    background-color: rgb(150, 148, 148);
+}
+.navigation-link:hover
+.navigation-link:focus {
+color:rgb(0, 0, 0)
+}
