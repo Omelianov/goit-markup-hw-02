@@ -4,3 +4,8 @@
 /* белый цвет #FFFFFF */
 /* белый цвет #FFFFFF прозрачность 60%*/
 /* background color F5F5F5 */
+
+body {
+    background-color: F5F5F5;
+}
+
