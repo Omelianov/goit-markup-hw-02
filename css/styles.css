@@ -1,11 +1,94 @@
+:root{
+    --font-family: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --white-color: #FFFFFF;
+    --white-color-60: rgba(255,255,255,0.6)
+
+}
+
 /* основной цвет текста #212121 */
 /* вторичный цвет текста #757575 */
 /* синий цвет #2196F3 */
 /* белый цвет #FFFFFF */
-/* белый цвет #FFFFFF прозрачность 60%*/
+/* белый цвет #FFFFFF */
 /* background color F5F5F5 */
 
 body {
     background-color: F5F5F5;
+    color: var(--font-family);
 }
 
+.logo-web {
+    color: var(--accent-color);
+}
+
+.list {
+    list-style: none;
+}
+
+/* site-nav and auth-nav*/
+.site-nav .link,
+.auth-nav .link {
+    color: var(--title-text-color);
+}
+
+.site-nav .link-blue:hover,
+.site-nav .link-blue:focus, 
+.auth-nav .link-blue:hover,
+.auth-nav .link-blue:focus{
+    color: var(--accent-color);
+}
+
+/* Section замовити послугу button */
+.button-posluga:hover,
+.button-posluga:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+  }
+
+/* Section Чим ми займаємося */
+
+.section-title, .title {
+    color: var(--title-text-color);
+}
+
+
+/* Section Наша команда */
+
+.section-title, .title {
+    color: var(--title-text-color);
+}
+
+/* Section footer */
+
+.address .location {
+    color: var(--white-color)
+}
+.address-tel, .address-mail {
+color: var(--white-color-60)
+}
+
+
+/* Page 2 */
+
+/* Section navigation button */
+
+
+
+/* Section portofolio image */
+
+.section-title, .title {
+    color: var(--title-text-color);
+}
+
+/* Section navigation button */
+
+.port-buttons {
+    color: var(--font-family);
+}
+.sort:hover,
+.sort:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color)
+}
