@@ -3,8 +3,8 @@
     --title-text-color: #212121;
     --accent-color: #2196F3;
     --white-color: #FFFFFF;
-    --white-color-60: rgba(255,255,255,0.6)
-
+    --white-color-60: rgba(255,255,255,0.6);
+    --white-background-button: #F5F4FA
 }
 
 /* основной цвет текста #212121 */
@@ -15,12 +15,19 @@
 /* background color F5F5F5 */
 
 body {
-    background-color: F5F5F5;
+    background-color: #F5F5F5;
     color: var(--font-family);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
 }
+/* Logo */
 
 .logo-web {
     color: var(--accent-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
 }
 
 .list {
@@ -31,6 +38,11 @@ body {
 .site-nav .link,
 .auth-nav .link {
     color: var(--title-text-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14px;
+    letter-spacing: 0.02em;
 }
 
 .site-nav .link-blue:hover,
@@ -41,23 +53,92 @@ body {
 }
 
 /* Section замовити послугу button */
+.hero-title {
+    color: var(--white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
 .button-posluga:hover,
 .button-posluga:focus {
     color: var(--white-color);
     background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
   }
 
-/* Section Чим ми займаємося */
+   /* <!-- Section особливости --> */
 
-.section-title, .title {
+.features .title-h2-merits {
     color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
 }
 
+.title-h3-details,
+.title-h3-timeliness,
+.title-h3-plan,
+.title-h3-tehnology{
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.features .text,
+.features .text-timeliness,
+.features .text-plan,
+.features .text-tehnology{
+    color: var(--title-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Section Чим ми займаємося и h2 наша команда */
+
+.section-title, .title,
+.title-h2-team
+{
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
 
 /* Section Наша команда */
 
-.section-title, .title {
+.title-h3-igor,
+.title-h3-olga,
+.title-h3-micola,
+.title-h3-mihailo{
     color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.product-designer,
+.frontend-developer,
+.marketing,
+.designer {
+     color: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
 }
 
 /* Section footer */
@@ -74,21 +155,50 @@ color: var(--white-color-60)
 
 /* Section navigation button */
 
-
-
-/* Section portofolio image */
-
-.section-title, .title {
-    color: var(--title-text-color);
-}
-
-/* Section navigation button */
-
 .port-buttons {
     color: var(--font-family);
+    background: var(--white-background-button);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
 }
+
 .sort:hover,
 .sort:focus {
     color: var(--white-color);
     background-color: var(--accent-color)
+}
+
+/* Section portofolio image */
+
+.title-h3-comp,
+.title-h3-poster,
+.title-h3-seafood,
+.title-h3-prime,
+.title-h3-boxes,
+.title-h3-inspirations,
+.title-h3-book,
+.title-h3-notebook
+ {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+}
+
+.text-comp,
+.text-poster,
+.text-seafood,
+.text-prime,
+.text-boxes,
+.text-inspirations,
+.text-book,
+.text-bookmark,
+.text-notebook {
+    color: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
 }
