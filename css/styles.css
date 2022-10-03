@@ -63,10 +63,10 @@ body {
     text-transform: uppercase;
 }
 
-.button-posluga:hover,
-.button-posluga:focus {
+.button-posluga {
     color: var(--white-color);
     background-color: var(--accent-color);
+    cursor: pointer;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
@@ -158,6 +158,7 @@ color: var(--white-color-60)
 .port-buttons {
     color: var(--font-family);
     background: var(--white-background-button);
+    cursor: pointer;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
