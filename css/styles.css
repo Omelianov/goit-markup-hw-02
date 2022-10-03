@@ -144,10 +144,19 @@ body {
 /* Section footer */
 
 .address .location {
-    color: var(--white-color)
+    color: var(--white-color);
+    background: #2F303A;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
 }
 .address-tel, .address-mail {
-color: var(--white-color-60)
+color: var(--white-color-60);
+background: #2F303A;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.7;
 }
 
 
