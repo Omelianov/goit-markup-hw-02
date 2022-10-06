@@ -4,7 +4,9 @@
     --accent-color: #2196F3;
     --white-color: #FFFFFF;
     --white-color-60: rgba(255,255,255,0.6);
-    --white-background-button: #F5F4FA
+    --white-background-button: #F5F4FA;
+    --studio-logo:#000000;
+    --background-hero-footer: #2F303A;
 }
 
 /* основной цвет текста #212121 */
@@ -22,12 +24,21 @@ body {
 }
 /* Logo */
 
-.logo-web {
+.web-blue, .studio-black, .studio-white {
     color: var(--accent-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    text-decoration: none;
+}
+
+.a-decorat-none {
+    text-decoration: none;
+}
+
+.studio-black {
+    color: var(--studio-logo);
 }
 
 .list {
@@ -43,18 +54,26 @@ body {
     font-size: 14px;
     line-height: 1.14px;
     letter-spacing: 0.02em;
+    text-decoration-line: none;
+    cursor: pointer;
 }
 
-.site-nav .link-blue:hover,
-.site-nav .link-blue:focus, 
-.auth-nav .link-blue:hover,
-.auth-nav .link-blue:focus{
+.site-nav .link:hover,
+.site-nav .link:focus, 
+.auth-nav .link:hover,
+.auth-nav .link:focus {
     color: var(--accent-color);
+    text-decoration-line: none;
 }
 
 /* Section замовити послугу button */
+.hero {
+    background-color: var(--background-hero-footer);
+}
+
 .hero-title {
     color: var(--white-color);
+    font-family: 'Roboto';
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -72,6 +91,7 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    cursor: pointer;
   }
 
    /* <!-- Section особливости --> */
@@ -83,6 +103,19 @@ body {
     line-height: 1.17;
     text-align: center;
 }
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+} 
 
 .title-h3-details,
 .title-h3-timeliness,
@@ -119,6 +152,14 @@ body {
 
 /* Section Наша команда */
 
+.section-team {
+    background-color: #F5F4FA;
+}
+
+.member-team {
+background-color: #fff;
+}
+
 .title-h3-igor,
 .title-h3-olga,
 .title-h3-micola,
@@ -140,30 +181,44 @@ body {
 
 /* Section footer */
 
+.footer-decoration {
+    background-color: var(--background-hero-footer);
+}
+
+.studio-white {
+    color: var(--white-color);    
+}
+
 .address .location {
     color: var(--white-color);
-    background: #2F303A;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    font-style: normal;
+    text-decoration: none;
 }
 .address-tel, .address-mail {
 color: var(--white-color-60);
-background: #2F303A;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.7;
+font-style: normal;
+text-decoration: none;
 }
 
 
 /* Page 2 */
 
-/* Section navigation button */
+/* Main*/
 
 .port-buttons {
     color: var(--font-family);
-    background: var(--white-background-button);
+}
+
+.sort {
+    cursor: pointer;
+    text-align: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -175,16 +230,14 @@ line-height: 1.7;
     background-color: var(--accent-color)
 }
 
-/* Section portofolio image */
-
-.title-h3-comp,
-.title-h3-poster,
-.title-h3-seafood,
-.title-h3-prime,
-.title-h3-boxes,
-.title-h3-inspirations,
-.title-h3-book,
-.title-h3-notebook
+.title-h2-comp,
+.title-h2-poster,
+.title-h2-seafood,
+.title-h2-prime,
+.title-h2-boxes,
+.title-h2-inspirations,
+.title-h2-book,
+.title-h2-notebook
  {
     color: var(--title-text-color);
     font-weight: 700;
@@ -205,5 +258,4 @@ line-height: 1.7;
     color: var(--font-family);
     font-size: 16px;
     line-height: 1.9;
-    letter-spacing: 0.03em;
 }
