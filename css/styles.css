@@ -1,4 +1,5 @@
 :root{
+    --background-color: #F5F5F5;
     --font-family: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
@@ -16,12 +17,16 @@
 /* белый цвет #FFFFFF */
 /* background color F5F5F5 */
 
-body {
-    background-color: #F5F5F5;
+.body {
     color: var(--font-family);
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
 }
+
+.header-bg {
+    background-color: var(--white-color);
+}
+
 /* Logo */
 
 .web-blue, .studio-black, .studio-white {
@@ -58,6 +63,10 @@ body {
     cursor: pointer;
 }
 
+.auth-nav .link {
+    color: var(--font-family);
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus, 
 .auth-nav .link:hover,
@@ -85,6 +94,7 @@ body {
 .button-posluga {
     color: var(--white-color);
     background-color: var(--accent-color);
+    font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
@@ -93,8 +103,16 @@ body {
     letter-spacing: 0.06em;
     cursor: pointer;
   }
+  .button-posluga:hover,
+  .button-posluga:focus {
+      background-color: #188CE8;
+  }
 
    /* <!-- Section особливости --> */
+
+   .features .section-work {
+    background-color: var(--background-color)
+   }
 
 .features .title-h2-merits {
     color: var(--title-text-color);
@@ -133,13 +151,12 @@ body {
 .features .text-timeliness,
 .features .text-plan,
 .features .text-tehnology{
-    color: var(--title-text-color);
+    color: var(--font-family);
     font-size: 14px;
     line-height: 1.7;
 }
 
 /* Section Чим ми займаємося и h2 наша команда */
-
 .section-title, .title,
 .title-h2-team
 {
@@ -199,12 +216,12 @@ background-color: #fff;
     text-decoration: none;
 }
 .address-tel, .address-mail {
-color: var(--white-color-60);
-font-weight: 400;
-font-size: 14px;
-line-height: 1.7;
-font-style: normal;
-text-decoration: none;
+    color: var(--white-color-60);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    font-style: normal;
+    text-decoration: none;
 }
 
 
@@ -212,12 +229,18 @@ text-decoration: none;
 
 /* Main*/
 
+.section-sort-buttons {
+    background-color: var(--background-color);
+}
+
 .port-buttons {
     color: var(--font-family);
+    background-color: #F5F4FA
 }
 
 .sort {
     cursor: pointer;
+    font-family: Roboto, sans-serif;
     text-align: center;
     font-weight: 500;
     font-size: 16px;
@@ -228,6 +251,10 @@ text-decoration: none;
 .sort:focus {
     color: var(--white-color);
     background-color: var(--accent-color)
+}
+
+.portfolio {
+    background-color: var(--white-color);
 }
 
 .title-h2-comp,
